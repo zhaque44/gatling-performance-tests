@@ -1,4 +1,4 @@
-# gatling-performance-tests
+# Gatling Performance Tests
 
 Performance Tests are a key source of information for developers. This post will go over the specific details on how to setup your performance test suite with Gatling as well as writing a Simulation from scratch to test your microservice.
 
