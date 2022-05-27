@@ -17,3 +17,8 @@ lazy val projectName = (project in file("."))
     )
   )
 ```
+Now, add the Gatling library dependencies:
+```scala
+"io.gatling.highcharts" % "gatling-charts-highcharts" % "3.1.3",
+"io.gatling" % "gatling-test-framework" % "3.1.3",
+```
