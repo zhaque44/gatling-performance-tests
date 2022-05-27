@@ -6,3 +6,9 @@ Let’s start by creating a plugins.sbt file in our project directory. We’re g
 addSbtPlugin("io.gatling" % "gatling-sbt" % "3.0.0")
 ```
 Once you’re done doing that, you have to enable the Gatling plugin in your build.sbt file:
+```scala
+lazy val projectName = (project in file("."))
+  .enablePlugins(GatlingPlugin)
+    )
+  )
+```
