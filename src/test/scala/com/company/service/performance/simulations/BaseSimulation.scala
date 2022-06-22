@@ -5,14 +5,14 @@ import io.gatling.http.Predef._
 
 abstract class BaseSimulation extends Simulation {
 
-  val baseUrl = sys.env.getOrElse("BASE_URL", s"https://jsonplaceholder.typicode.com")
+  val baseUrl = sys.env.getOrElse("BASE_URL", s"https://jsonplaceholder.typicode.com/todos/1")
 
   val username = ""
   val password = ""
-  val prerequisites = s"$baseUrl"
+  val endpoint = s"$baseUrl"
 
 
-  val hankRequest = http.baseUrl(prerequisites)
+  val getRequest = http.baseUrl(endpoint)
     .header("Accept", "application/json")
 
   val httpProtocol = http.baseUrl(baseUrl)
