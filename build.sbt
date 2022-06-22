@@ -6,7 +6,7 @@ scalaVersion := "2.12.8"
 
 val json4s = "3.6.1"
 
-lazy val recommendationsTests = (project in file("."))
+lazy val gatlingPerformanceTests = (project in file("."))
   .enablePlugins(GatlingPlugin)
   .settings(
     scalacOptions += "-feature",
